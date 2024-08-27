@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-   
+
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="menu-checkbox">
-        <label for="menu">
-            <span class="menu-hamburguer"></span>
-        </label>
-         <img src="assets/img/AluraBooks/Logo.svg"
-            alt="Logo da AluraBooks" class="logo-alurabooks">
+            <label for="menu">
+                <span class="menu-hamburguer"></span>
+            </label>
+            <img src="assets/img/AluraBooks/Logo.svg" alt="Logo da AluraBooks" class="logo-alurabooks">
             <ul class="menu-lista">
                 <li class="lista-titulo">CATEGORIAS</li>
                 <li class="lista-item"><a href="#">Aventura</a></li>
@@ -36,34 +34,44 @@
             <a href="#"><img src="assets/img/AluraBooks/Favoritos.svg" alt=""></a>
         </div>
     </header>
-    <section class="banner"> 
+    <section class="banner">
         <h2 class="banner-titulo">
             ja sabe por onde começar?
         </h2>
-        <p class="banner-texto"> encontre em nossa estante o que precisa para 
-            seu desenvolvimento 
+        <p class="banner-texto"> encontre em nossa estante o que precisa para
+            seu desenvolvimento
         </p>
-         <input class="banner-pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
-      </section>
-<section class="carrossel">
- <h2 class="carrossel-titulo">
-  Novos lançamentos 
- </h2>
+        <input class="banner-pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">
+            Novos lançamentos
+        </h2>
 
-<div class="swiper-wrapper">
- <div class="swiper-slide"><img src="assets/img/AluraBooks/ApacheKafka.png" alt=""></div> 
- <div class="swiper-slide"><img src="assets/img/AluraBooks/Liderança.png" alt=""></div>
- <div class="swiper-slide"> <img src="assets/img/AluraBooks/Javascript.png" alt=""></div>
- <div class="swiper-slide"> <img src="assets/img/AluraBooks/Portugol.png" alt=""> </div>
-</div>
-</section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/AluraBooks/ApacheKafka.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/AluraBooks/Liderança.png" alt=""></div>
+                <div class="swiper-slide"> <img src="assets/img/AluraBooks/Javascript.png" alt=""></div>
+                <div class="swiper-slide"> <img src="assets/img/AluraBooks/Portugol.png" alt=""> </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-      const swiper = new Swiper('.swiper', {
-         spaceBetween: 10,
-         slidePerview: 3,
-      });
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:{
+                el:"swiper-pagination",
+                type: "bullets",
+            }
+        });
+    </script>
 </body>
+
 </html>
